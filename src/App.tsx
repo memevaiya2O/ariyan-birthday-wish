@@ -4,8 +4,6 @@ import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import NotFound from '@/pages/not-found';
-import birthdayPhoto from '@assets/r5_1792722353802.png';
-import birthdaySticker from '@assets/Screenshot_20261023-084045_1792723896445.png';
 import { ArrowDown, ArrowLeft, ArrowRight, Gift, Heart, RotateCcw, Sparkles } from 'lucide-react';
 import { Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
 
@@ -131,7 +129,7 @@ function Home() {
         <div className="hero-copy"><p className="eyebrow"><span className="eyebrow-line" />IT'S YOUR DAY</p><h1 id="birthday-title" className="hero-title">Happy Birthday</h1><span className="hero-name">Ariyan Shanto</span><p className="hero-note">Here's to a day filled with the kind of joy you bring to everyone around you.</p><div className="hero-meta"><span className="meta-rule" /><span>23/10/2009</span><span className="meta-dot">·</span><span>Made just for you</span></div>
           <button className="wish-button" type="button" onClick={openWish} data-testid="button-open-wish"><span className="button-icon"><Gift size={17} strokeWidth={1.8} /></span>Open your wish note<span className="button-arrow" aria-hidden="true">↗</span></button>
         </div>
-        <div className="portrait-wrap"><div className="portrait-orbit orbit-one" aria-hidden="true" /><div className="portrait-orbit orbit-two" aria-hidden="true" /><button className="portrait-frame portrait-link" type="button" onClick={openWish} aria-label="Open Ariyan's wish note"><img src={birthdayPhoto} alt="Ariyan surrounded by bright flowers" className="portrait-photo" data-testid="img-birthday-photo" /></button><img className="birthday-sticker" src={birthdaySticker} alt="" aria-hidden="true" /><span className="photo-caption">Tap the photo to open a little more love</span></div>
+        <div className="portrait-wrap"><div className="portrait-orbit orbit-one" aria-hidden="true" /><div className="portrait-orbit orbit-two" aria-hidden="true" /><button className="portrait-frame portrait-link" type="button" onClick={openWish} aria-label="Open Ariyan's wish note"><img src="/ariyan-photo.jpg" alt="Ariyan surrounded by bright flowers" className="portrait-photo" data-testid="img-birthday-photo" /></button><img className="birthday-sticker" src="/birthday-sticker.png" alt="" aria-hidden="true" /><span className="photo-caption">Tap the photo to open a little more love</span></div>
         <button className="scroll-cue" type="button" onClick={openWish}><span>A little more</span><ArrowDown size={14} strokeWidth={1.6} /></button>
       </section>
       <footer className="birthday-footer birthday-footer-single"><p className="copyright-line">© 2026 All Right reserved • <a href="https://t.me/infinity_codex" target="_blank" rel="noopener noreferrer">—͟͞͞𝗬𝗨𝗧𝗧𝗔 ⸙</a></p><button className="replay-button" type="button" onClick={replay} data-testid="button-replay-intro"><RotateCcw size={14} /> Replay intro</button></footer>
